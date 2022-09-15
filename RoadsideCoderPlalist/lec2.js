@@ -88,3 +88,25 @@
 //     return acc+curr;
 // },0);
 // console.log(arr2);  // 15
+
+
+// Diff between map and forEach
+// map returns a new arr but forEach makes change in the original arr 
+// we can use chaning in map but not in case of forEach
+
+// O/P questions
+
+let students=[
+    {name:"jitesh",age:21,salary:6},
+    {name:"preeti",age:25,salary:10},
+    {name:"grazzy",age:20,salary:8}
+]
+
+// return the name in uppercase
+// const ans= students.map((curr,i,arr)=> curr.name.toUpperCase());
+// console.log(ans);  // [ 'JITESH', 'PREETI', 'GRAZZY' ]
+
+// return whose salary>8 and age>21
+// const ans=students.filter((curr)=>curr.salary>8 && curr.age>21).map((curr)=> curr.name);
+// console.log(ans); // [ 'preeti' ]
+
