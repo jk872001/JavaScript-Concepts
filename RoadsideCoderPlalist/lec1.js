@@ -1,0 +1,1 @@
+// Scope--> Scope is as certain region of a program where a defined variable exists and can be recognised and beyond that it cannot be recognised.
