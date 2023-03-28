@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Bubbling</title>
+    <title>Event Capturing</title>
 </head>
 <body>
-    <h1>Child to Parent</h1>
-
+    <h1>Parent to child</h1>
     <div id="outer">
         <div id="inner">
             <div id="btn">Click</div>
@@ -23,14 +22,13 @@
     outer.addEventListener("click",function()
     {
         alert("Outer clicked");
-    })
+    },true)
     inner.addEventListener("click",function()
     {
         alert("inner clicked");
-    })
-    btn.addEventListener("click",function(e)
+    },true)
+    btn.addEventListener("click",function()
     {
-        e.stopPropagation();  // here we can prevent the event bubbling
         alert("btn clicked");
     })
 </script>
