@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="outer">
+        <div id="inner">
+            <div id="btn">Click</div>
+        </div>
+    </div>
+</body>
+<script>
+    const outer=document.getElementById("outer")
+    const inner=document.getElementById("inner")
+    const btn=document.getElementById("btn")
+
+    outer.addEventListener("click",function()
+    {
+        alert("Outer clicked");
+    })
+    inner.addEventListener("click",function()
+    {
+        alert("inner clicked");
+    })
+    btn.addEventListener("click",function(e)
+    {
+        e.stopPropagation();  // here we can prevent the event bubbling
+        alert("btn clicked");
+    })
+</script>
+</html>
