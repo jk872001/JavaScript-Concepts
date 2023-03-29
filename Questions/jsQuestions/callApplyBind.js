@@ -10,5 +10,5 @@ function printName(hometown)
 // printName.call(obj1,"Haryana")
 // printName.apply(obj1,["Haryana"])
 
-const useLater=  printName.bind(obj1,"Haryana")
+const useLater=  printName.bind(obj1,"Haryana");
 useLater();
