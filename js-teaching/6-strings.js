@@ -1,35 +1,48 @@
-const name = "hitesh"
-const repoCount = 50
+const name = "jitesh"
+const age = 22
 
-// console.log(name + repoCount + " Value");
+// console.log(name + " "+ age );
 
-console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
+// console.log(`My name is ${name} and age is ${age}`);
 
-const gameName = new String('hitesh-hc-com')
+const gameName = new String('Nidhi')
 
-// console.log(gameName[0]);
+// console.log(gameName[3]);
 // console.log(gameName.__proto__);
 
 
 // console.log(gameName.length);
 // console.log(gameName.toUpperCase());
-console.log(gameName.charAt(2));
-console.log(gameName.indexOf('t'));
+// console.log(gameName.toLowerCase());
+// console.log(gameName.__proto__.toUpperCase());
+// console.log(gameName.charAt(2));
+// console.log(gameName.indexOf('t'));
 
-const newString = gameName.substring(0, 4)
-console.log(newString);
 
-const anotherString = gameName.slice(-8, 4)
+// let obj1={
+//     obj2:{
+//         toUpperCase:function
+//     }
+// }
+
+const newString = gameName.substring(6, gameName.length)
+// console.log(newString);
+
+const anotherString = gameName.slice(0)
 console.log(anotherString);
 
-const newStringOne = "   hitesh    "
-console.log(newStringOne);
-console.log(newStringOne.trim());
+const newStringOne = "   jitesh    "
+// console.log(newStringOne);
+// console.log(newStringOne.trim());
 
 const url = "https://jitesh.com/jitesh%20kumar"
 
-console.log(url.replace('%20', '-'))
+// console.log(gameName.replace('Ponnalwar', 'Jitesh Kumar'))
 
-console.log(url.includes('sundar'))
+let email="jitesh123-kumar@.com"
+// console.log(email.includes("@"))
 
-console.log(gameName.split('-'));
+// console.log(email.split("s"));
+
+
+// jitesh.skip("bathing").important("dhakka-mukki")

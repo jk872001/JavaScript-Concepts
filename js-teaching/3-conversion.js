@@ -70,7 +70,15 @@ num1 = num2 = num3 = 2 + 2 + 3
 
 let gameCounter = 100
 ++gameCounter;
-console.log(gameCounter);
+// console.log(gameCounter);
+
+let a=5;
+let b= ++a;
+let c= a++;
+
+// console.log(c)
+// console.log(b)
+// console.log(a)
 
 // link to study
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
