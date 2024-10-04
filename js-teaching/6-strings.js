@@ -1,11 +1,11 @@
 const name = "jitesh"
 const age = 22
 
-// console.log(name + " "+ age );
+// console.log(name + " " + age );
 
 // console.log(`My name is ${name} and age is ${age}`);
 
-const gameName = new String('Nidhi')
+const gameName = new String('Nidhi Ponnalwar')
 
 // console.log(gameName[3]);
 // console.log(gameName.__proto__);
@@ -16,7 +16,7 @@ const gameName = new String('Nidhi')
 // console.log(gameName.toLowerCase());
 // console.log(gameName.__proto__.toUpperCase());
 // console.log(gameName.charAt(2));
-// console.log(gameName.indexOf('t'));
+// console.log(gameName.indexOf('d'));
 
 
 // let obj1={
@@ -25,19 +25,21 @@ const gameName = new String('Nidhi')
 //     }
 // }
 
-const newString = gameName.substring(6, gameName.length)
+// const newString = gameName.substring(6, gameName.length)
 // console.log(newString);
 
-const anotherString = gameName.slice(0)
-console.log(anotherString);
+// const anotherString = gameName.slice(6,gameName.length)
+// console.log(anotherString);
 
 const newStringOne = "   jitesh    "
-// console.log(newStringOne);
+// console.log(newStringOne.trimStart());
 // console.log(newStringOne.trim());
+
+// console.log(gameName.replace('Poonalwar', 'Jitesh Kumar'))
 
 const url = "https://jitesh.com/jitesh%20kumar"
 
-// console.log(gameName.replace('Ponnalwar', 'Jitesh Kumar'))
+
 
 let email="jitesh123-kumar@.com"
 // console.log(email.includes("@"))
@@ -46,3 +48,10 @@ let email="jitesh123-kumar@.com"
 
 
 // jitesh.skip("bathing").important("dhakka-mukki")
+
+
+// replace methode
+
+let name2= "Nidhi Poonalwar";
+
+// console.log(name.replace("Poonalwar","Jitesh Kumar"))

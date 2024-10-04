@@ -128,3 +128,7 @@ console.log(Array.of(score1, score2, score3));
 
 // assignment
 // write three ways of adding the two arrays
+
+
+
+let str="jitesh"

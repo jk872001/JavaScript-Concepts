@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Background color for contrast */
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(50, 1fr); /* Adjust the number of squares (e.g., 50x50 grid) */
+  grid-template-rows: repeat(50, 1fr);
+  width: 100%;
+  height: 100%;
+}
+
+.grid div {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://assets.staticimg.com/kucoin-main-web/1.8.8/static/nftToken/banner.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+  opacity: 1;
+  pointer-events: none; /* Prevent pointer events for grid items */
+}
+
+
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="grid"></div>
+      </div>
+      
+      
+</body>
+<script>
+   const grid = document.querySelector('.grid');
+
+// Create grid items
+for (let i = 0; i < 2500; i++) { // 50 * 50 = 2500 (Adjust based on grid-template)
+  const square = document.createElement('div');
+  grid.appendChild(square);
+}
+
+// Add mousemove event to shatter small area around mouse pointer
+document.addEventListener('mousemove', (e) => {
+  const squares = document.querySelectorAll('.grid div');
+  squares.forEach(square => {
+    const rect = square.getBoundingClientRect();
+    const distance = Math.hypot(e.clientX - (rect.left + rect.width / 2), e.clientY - (rect.top + rect.height / 2));
+
+    if (distance < 100) { // Adjust this radius for the shattering effect
+      const randomX = (Math.random() - 0.5) * 100; // Random displacement in X direction
+      const randomY = (Math.random() - 0.5) * 100; // Random displacement in Y direction
+      square.style.transform = `translate(${randomX}px, ${randomY}px) rotate(${Math.random() * 360}deg)`;
+      square.style.opacity = 0;
+
+      // Reset after 1 second
+      setTimeout(() => {
+        square.style.transform = 'none';
+        square.style.opacity = 1;
+      }, 1000); // 1000ms = 1 second
+    }
+  });
+});
+
+
+
+
+</script>
+</html>

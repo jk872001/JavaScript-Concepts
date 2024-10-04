@@ -1,9 +1,10 @@
 // stack or heap
 
 
+// string --> number
 let score = "jitesh"
 
-//console.log(typeof score);
+// console.log(typeof score);
 //console.log(typeof(score));
 
 let valueInNumber = Number(score)   
@@ -12,10 +13,12 @@ let valueInNumber = Number(score)
 
 
 // "33" => 33
-// "33abc" => NaN
+// "33abc" => NaN (not a number)
 //  true => 1; false => 0
 
 // console.log(Number(true))
+
+
 
 let isLoggedIn = "jitesh"
 
@@ -30,6 +33,8 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 
 let someNumber = 33
 
+
+
 let stringNumber = String(someNumber)
 // console.log(stringNumber);
 // console.log(typeof stringNumber);
@@ -43,23 +48,25 @@ let negValue = -value
 // console.log(2+2);
 // console.log(2-2);
 // console.log(2*2);
-// console.log(2**4);  
+// console.log(2**4);  (2*2*2*2)= 16
 // console.log(2/3);
-// console.log(2%3);
+// console.log(5%3); --> 2
 
 let str1 = "hello"
-let str2 = " hitesh"
+let str2 = " jitesh"
 
 let str3 = str1 + str2
 // console.log(str3);
 
 // console.log("1" + 2);
 // console.log(1 + "2");
-// console.log("1" + 2 + 2);
+// console.log("1" + 2 + 2);  //("1" + 2 ==> "12" + 2 ==> "122") 
 // console.log(1 + 2 + "2");
 // console.log(1 + "2" + 2);
 
 // console.log( (3 + 4) * 5 % 3);
+
+// if we want to change anything into number then there is 2 ways (Number || + )
 
 // console.log(+true);
 // console.log(+"");
@@ -73,8 +80,14 @@ let gameCounter = 100
 // console.log(gameCounter);
 
 let a=5;
+
 let b= ++a;
-let c= a++;
+// ++a
+// let b=a
+
+let c= a++; 
+// let c=a
+// a++
 
 // console.log(c)
 // console.log(b)

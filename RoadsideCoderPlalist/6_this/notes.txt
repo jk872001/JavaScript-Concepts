@@ -1,0 +1,1 @@
+Explanation: In JavaScript, this refers to the object it belongs to. In the given code, this.a inside the console.log refers to the property a of the global object, which is undefined unless explicitly defined elsewhere.

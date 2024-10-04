@@ -13,8 +13,8 @@ typeof undefined // Returns "undefined"
 typeof null // Returns "object" (kind of a bug in JavaScript)
 typeof Symbol('symbol') // Returns Symbol
 
-const symb1=Symbol(11)
-const symb2=Symbol(11)
+const symb1= Symbol(11)
+const symb2= Symbol(11)
 
 // console.log(symb1==symb2)
 
@@ -34,6 +34,8 @@ var obj1 = {
       return this.x;
    }
 }
+
+// console.log(obj1.y)
       
 let shivani1={
    name:"shivani",
@@ -75,5 +77,5 @@ let shivani2={
 
 //  console.log(shivani.name);
 
-const arr=["jitesh",22,shivani]
-console.log(arr);
+// const arr=["jitesh",22,shivani]
+// console.log(arr);
